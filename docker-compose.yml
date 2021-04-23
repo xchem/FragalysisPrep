@@ -1,0 +1,7 @@
+services:
+  xchemreview:
+    build: xchemreview
+    ports:
+      - '5000:5000'
+  fragalysisapi:
+    build: fragalysis-api
