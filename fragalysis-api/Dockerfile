@@ -5,5 +5,5 @@ RUN apt-get install -y git-all
 RUN conda install -c rdkit rdkit -y
 RUN git clone https://github.com/xchem/gemmi_pandda.git; cd ./gemmi_pandda; pip install --force-reinstall .; cd ..
 RUN git clone https://github.com/xchem/pandda_gemmi.git; cd ./pandda_gemmi; pip install -e .; cd ..
-RUN git clone https://github.com/xchem/fragalysis-api.git; cd ./fragalysis-api; pip install -e .; cd ..
+RUN git clone https://github.com/xchem/fragalysis-api.git; cd ./fragalysis-api; git checkout ReduceReferenceFrame; pip install -e .; cd ..
 ENTRYPOINT ["/bin/bash"]
