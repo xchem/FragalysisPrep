@@ -61,7 +61,7 @@ In our example `/data/input/Example` would be a valid filepath
 To run the fragalysis-api (see documentation for more information)
 
 ```
-python ./fragalysis-api/fragalysis_api/xcimporter/xcimporter.py --in_dir=/data/input/[Example] --out_dir=/data/output/ --target [Example] -rrf -c -md
+python ./fragalysis-api/fragalysis_api/xcimporter/xcimporter.py --in_dir=/data/[Example] --out_dir=/data/output/ --target [Example] -rrf -c -md
 ```
 
 ## Running XCR
