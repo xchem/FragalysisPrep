@@ -1,6 +1,8 @@
 services:
   xchemreview:
     build: xchemreview
+    volumes:
+    - .:/mnt/app/ # Change this if you need to specify a different location.
     ports:
       - '5000:5000'
   fragalysisapi:
