@@ -68,10 +68,9 @@ python ./fragalysis-api/fragalysis_api/xcimporter/xcimporter.py --in_dir=/data/i
 
 After using fragalysis-api to create the fragalysis inputs you can then run XCR to review and annotate the data for your fragalysis upload.
 
-Simply run the xchemreview container and mount the fragalysis api output folder as the source:
-
+Simply run the xchemreview container move the output folder within the `fragalysisprep` folder or change the docker-compose file to point to the correct mount point and then run:
 ```
-docker run --mount type=bind,source=[input folder],target=/data/ -t fragalysisprep_xchemreview
+docker compose up
 ```
 
 Then simply open your favourite browser and navigate to the localhost:5000 URL and you will be using XCR!
