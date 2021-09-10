@@ -61,7 +61,7 @@ In our example `/data/input/Example` would be a valid filepath
 To run the fragalysis-api (see documentation for more information)
 
 ```
-python ./fragalysis-api/fragalysis_api/xcimporter/xcimporter.py --in_dir=/data/input/[Example] --out_dir=/data/output/ --target [Example]
+python ./fragalysis-api/fragalysis_api/xcimporter/xcimporter.py --in_dir=/data/input/[Example] --out_dir=/data/output/ --target [Example] -rrf -c -md
 ```
 
 ## Running XCR
@@ -74,4 +74,4 @@ Simply run the xchemreview container and mount the fragalysis api output folder 
 docker run --mount type=bind,source=[input folder],target=/data/ -t fragalysisprep_xchemreview
 ```
 
-Then simply open your favourite browser and navigate to the localhot:5000 URL and you will be using XCR!
+Then simply open your favourite browser and navigate to the localhost:5000 URL and you will be using XCR!
