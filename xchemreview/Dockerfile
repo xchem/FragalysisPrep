@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 	libpq-dev
 
 # Install R packages
-RUN R -e "install.packages(c('devtools', 'caTools','shiny','shinydashboard','shinyjqui','shinyWidgets','htmlwidgets', 'DT', 'remotes', 'shinyjs'), repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages(c('markdown','devtools', 'caTools','shiny','shinydashboard','shinyjqui','shinyWidgets','htmlwidgets', 'DT', 'remotes', 'shinyjs'), repos='http://cran.rstudio.com/')"
 RUN R -e "library(devtools); devtools::install_github('tjgorrie/nglShiny'); devtools::install_github('tjgorrie/localXCR')" 
 
 # Port
