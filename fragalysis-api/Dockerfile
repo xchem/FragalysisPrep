@@ -11,8 +11,8 @@ ADD ccp4.setup-sh ./ccp4/bin
 ADD cut_maps.sh /cut_maps.sh
 RUN chmod 775 /cut_maps.sh
 RUN conda install -c rdkit rdkit -y
-RUN git clone https://github.com/xchem/gemmi_pandda.git; cd ./gemmi_pandda; pip install --force-reinstall .; cd ..
-#RUN pip install gemmi
+#RUN git clone https://github.com/xchem/gemmi_pandda.git; cd ./gemmi_pandda; pip install --force-reinstall .; cd ..
+RUN pip install gemmi
 RUN git clone https://github.com/xchem/pandda_gemmi.git; cd ./pandda_gemmi; pip install -e .; cd ..
 RUN git clone https://github.com/xchem/fragalysis-api.git; cd ./fragalysis-api; git checkout ReduceReferenceFrame; git pull; pip install -e .; cd ..
 ENTRYPOINT ["/bin/bash"]

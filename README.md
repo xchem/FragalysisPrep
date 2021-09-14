@@ -62,6 +62,8 @@ To run the fragalysis-api (see documentation for more information)
 
 ```
 python ./fragalysis-api/fragalysis_api/xcimporter/xcimporter.py --in_dir=/data/input/[Example] --out_dir=/data/output/ --target [Example] -rrf -c -md
+# Cutting maps after
+./cut_maps.sh [Example]
 ```
 
 ## Running XCR
