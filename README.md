@@ -6,11 +6,11 @@ The first container `fragalysis-api` requires running interactively and mounting
 
 Following this - the `xchemreview` container will need to be run (also with mounting a part of the file system when running the container) - to then annotate the outputs of the fragalysis api and prepare them for fragalysis upload (or for visualisation).
 
-We recommend that you read the documentation for both (fragalysis-api)[https://github.com/xchem/fragalysis-api] and (xchemreview)[https://github.com/xchem/localXCR] for both tips on how to use each of the tools.
+We recommend that you read the documentation for both [fragalysis-api](https://github.com/xchem/fragalysis-api) and [xchemreview](https://github.com/xchem/localXCR) for both tips on how to use each of the tools.
 
 ## Installing/Building the containers from docker-compose
 
-Firstly you will need to install (Docker)[https://docs.docker.com/get-docker/] or (Podman)[https://podman.io/getting-started/installation] (if you are using RedHat/CentOS - the commands may vary slightly if using podman but we will assume you are using Docker)
+Firstly you will need to install [Docker](https://docs.docker.com/get-docker/) or [Podman](https://podman.io/getting-started/installation) (if you are using RedHat/CentOS - the commands may vary slightly if using podman but we will assume you are using Docker)
 
 Then build the containers using the following commands:
 
